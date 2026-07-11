@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 type Plan = "ai" | "human";
 const plans: Record<Plan, { label: string; title: string; price: string; desc: string; items: string[] }> = {
-  ai: { label: "AI 전화", title: "커리어 AI", price: "29,000원 / 월", desc: "부담 없는 AI가 매달 당신의 일을 묻습니다.", items: ["월 1회 정기 AI 전화", "이력서·경력기술서 업데이트", "PDF 이메일 발송"] },
-  human: { label: "전문가 전화", title: "커리어 전문가", price: "59,000원 / 월", desc: "10년 차 커리어 전문가가 성장을 정리합니다.", items: ["월 1회 정기 전문가 전화", "이력서·경력기술서·포트폴리오", "다음 달 커리어 액션 플랜"] },
+  ai: { label: "AI 전화", title: "커리어 AI", price: "29,000원 / 월", desc: "부담 없는 AI가 매달 당신의 일을 묻습니다.", items: ["월 1회 정기 AI 전화", "이력서·경력기술서·포트폴리오 업데이트", "이직에 바로 사용할 수 있는 PDF 파일 전송"] },
+  human: { label: "전문가 전화", title: "커리어 전문가", price: "59,000원 / 월", desc: "10년 차 커리어 전문가가 성장을 정리합니다.", items: ["월 1회 정기 전문가 전화", "이력서·경력기술서·포트폴리오", "이직에 바로 사용할 수 있는 PDF 파일 전송", "다음 달 커리어 액션 플랜"] },
 };
 
 export default function Home() {
