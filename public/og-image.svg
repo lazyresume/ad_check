@@ -1,6 +1,6 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="630" fill="#0B0D12"/>
-  <text x="600" y="330" text-anchor="middle" fill="#F5F7FA" font-family="Pretendard, Arial, sans-serif" font-size="88" letter-spacing="-5">
-    <tspan font-weight="800">게으른</tspan><tspan font-weight="800"> 이력서</tspan>
+  <text x="600" y="350" text-anchor="middle" fill="#F5F7FA" font-family="Pretendard, Arial, sans-serif" font-size="148" letter-spacing="-7">
+    <tspan font-weight="800">게으른</tspan><tspan dx="14" font-weight="800">이력서</tspan>
   </text>
 </svg>
