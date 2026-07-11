@@ -1,0 +1,3 @@
+.hero-art{width:390px;height:540px;box-shadow:0 30px 90px rgba(58,105,176,.28)}
+.hero-art .phone{width:260px;height:430px;box-shadow:0 28px 60px rgba(45,79,130,.25)}
+@media(max-width:760px){.hero-art{width:350px;height:500px;box-shadow:0 24px 60px rgba(58,105,176,.22)}.hero-art .phone{width:245px;height:410px}}
