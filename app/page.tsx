@@ -24,7 +24,13 @@ export default function Home() {
     nodes.forEach((node) => observer.observe(node));
     return () => observer.disconnect();
   }, []);
-  const choose = (plan: Plan) => { setSelected(plan); setSent(false); if (typeof window !== "undefined") { const key = `lazyresume_click_${plan}`; localStorage.setItem(key, String(Number(localStorage.getItem(key) || 0) + 1)); } };
+  const choose = (plan: Plan) => {
+    if (typeof window !== "undefined") {
+      const key = `lazyresume_click_${plan}`;
+      localStorage.setItem(key, String(Number(localStorage.getItem(key) || 0) + 1));
+      window.location.href = `https://tally.so/r/WOBrvL?plan=${plan}&source=landing`;
+    }
+  };
   return <main>
     <header className="toss-header"><a href="#top" className="toss-logo">lazy<span>resume</span></a><nav><a href="#story">서비스</a><a href="#plans">플랜</a><a href="#faq">FAQ</a></nav><a href="#plans" className="header-cta">시작하기</a></header>
     <section className="scene hero-scene" id="top"><div className="scene-inner hero-inner"><p className="tiny-label">LAZYRESUME / MONTHLY CAREER RECORD</p><h1>이력서 업데이트,<br /><strong>이제 매달<br />전화 한 통으로</strong><br />끝내세요!</h1><p className="scene-sub">이직은 하고 싶은데,<br />주말에 이력서 열기조차 귀찮으셨죠?<br /><br />내가 편한 시간에 잠깐,<br />친구와 통화하듯 이번 달에 한 일을 들려주세요.</p><a className="black-pill" href="#story">어떻게 하는지 보기 <span>↓</span></a><div className="hero-plan-actions"><div className="hero-plan-row"><div><span>AI 전화</span><strong>29,000원 / 월</strong></div><button onClick={() => choose("ai")}>AI와 편하게 매월 전화하기 <span>→</span></button></div><div className="hero-plan-row"><div><span>전문가 전화</span><strong>59,000원 / 월</strong></div><button onClick={() => choose("human")}>전문가와 전문적으로 매월 전화하기 <span>→</span></button></div></div></div><div className="hero-art"><div className="phone"><div className="phone-top">게으른 이력서 <span>●●●</span></div><div className="phone-wave"><i /><i /><i /><i /><i /></div><p>지난번에 하시던<br /><b>프로젝트는 어디까지<br />진행됐나요?</b></p><small>이번 달의 통화</small><div className="phone-button">●</div></div></div></section>
