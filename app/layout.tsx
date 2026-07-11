@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "게으른 이력서, 매달 전화 한 통으로 이력서 업데이트!",
-  description: "이력서 업데이트, 이제 매달 전화 한 통으로 끝내세요!",
+  description: "이번 달에 한 일을 전화로 들려주면 이력서·경력기술서·포트폴리오를 최신 상태로 정리해드려요.",
   metadataBase: new URL("https://lazyresume.kr"),
   openGraph: {
     title: "매달 전화 한 통으로 커리어를 업데이트하세요",
-    description: "이력서 업데이트, 이제 매달 전화 한 통으로 끝내세요!",
+    description: "이번 달에 한 일을 전화로 들려주면 이력서·경력기술서·포트폴리오를 최신 상태로 정리해드려요.",
     url: "https://lazyresume.kr",
     siteName: "게으른 이력서",
     locale: "ko_KR",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "매달 전화 한 통으로 커리어를 업데이트하세요",
-    description: "이력서 업데이트, 이제 매달 전화 한 통으로 끝내세요!",
+    description: "이번 달에 한 일을 전화로 들려주면 이력서·경력기술서·포트폴리오를 최신 상태로 정리해드려요.",
     images: ["/og-image.png"],
   },
   icons: {
