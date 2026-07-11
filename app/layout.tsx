@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     siteName: "게으른 이력서",
     locale: "ko_KR",
     type: "website",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "lazyresume" }],
+    images: [{ url: "/og-image.png", width: 1731, height: 909, alt: "게으른 이력서" }],
   },
   twitter: {
     card: "summary",
     title: "매달 전화 한 통으로 이력서 업데이트",
     description: "이력서 업데이트, 이제 매달 전화 한 통으로 끝내세요!",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.svg",
