@@ -1,0 +1,4 @@
+.toss-plan:not(.dark){background:#eef5ff;border-color:#cfe0ff}
+.toss-plan:not(.dark) .plan-label{color:#2764da}
+.toss-plan:not(.dark) button{background:#2764da;color:#fff}
+.toss-plan:not(.dark) button:hover{background:#1f54bb}
